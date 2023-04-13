@@ -1,3 +1,10 @@
 {% extends 'main.html' %} {% block content %}
+<p>안녕하세요, 여기는 {{ page }} 페이지 입니다.</p>
 <h1>projects tenplate</h1>
-{% endblock content %}
+{% if number == 10 %}
+<p>숫자가 10 입니다!</p>
+{% elif number > 10 %}
+<p>숫자가 10보다 큽니다!</p>
+{% else %}
+<p>숫자가 10보다 작습니다!</p>
+{% endif %} {% endblock content %}
